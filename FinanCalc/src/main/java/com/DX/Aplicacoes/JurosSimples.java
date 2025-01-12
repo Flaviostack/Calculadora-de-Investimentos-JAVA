@@ -5,9 +5,17 @@ package com.DX.Aplicacoes;
             super(capital, taxa, tempoDeAplicacao);
         }
 
+        public JurosSimples(){}
+
         public void calcularJuros(){
             juros = capital*taxa*tempoDeAplicacao;
             double montante =capital+juros;
             System.out.printf("Montante final: R$%.2f\n",montante);
+        }
+
+        @Override
+        public void pedirDados() {
+            System.out.println("----------JUROS SIMPLES----------");
+            super.pedirDados();
         }
 }
