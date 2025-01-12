@@ -1,6 +1,6 @@
 package com.DX.Aplicacoes;
 
- class Juros {
+ public abstract class Juros {
     public double capital;
     public double juros;
     public double taxa;
@@ -13,8 +13,6 @@ package com.DX.Aplicacoes;
         this.tempoDeAplicacao = tempoDeAplicacao;
     }
 
-    public void calcularJuros(){
-
-    }
+    abstract void calcularJuros();
 
 }
